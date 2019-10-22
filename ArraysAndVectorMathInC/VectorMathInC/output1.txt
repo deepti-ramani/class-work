@@ -19,8 +19,8 @@ Array v1:    1    2    3
 Array v2:    3    4    7
 The cross product of v1 x v2 is:    2    2   -2
 
-Array a:    2   -1   -1   -5    3    5    2    4   -4   -5
-Array b:    5   -4    5   -2   -1    2    2    3   -1    5
-The dot product of a * b is 21
-The dot product of a * b is -830
+Array a:   -4   -5    2    3    4    2    4   -4    0    2
+Array b:    3    3   -3    3   -2    2   -1    4    5   -2
+The dot product of a * b is -52
+The dot product of a * b is 215
 

@@ -200,7 +200,7 @@ void cross_product_test(void)
 
 int main(void)
 {
-  srand(5);
+  srand(17);
 
   reverse_test();
   add_test();

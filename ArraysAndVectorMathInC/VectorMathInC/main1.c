@@ -47,7 +47,7 @@ void test1(void)
   int i;
   int product;
 
-  srand(2);
+  srand(19);
   for (i = 0; i < SIZE1; i++)
   {
     a[i] = RandomInt(-5, 5);

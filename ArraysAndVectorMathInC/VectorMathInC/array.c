@@ -4,7 +4,7 @@ Author: Deepti
 Date: 10/21/2019
 Brief Description: A file containing 5 functions that perform various modifiers on arrays
 
-gcc -O -Wall -Wextra -ansi -pedantic main1.c array.c -o array1
+gcc -O -Wall -Wextra -ansi -pedantic main2.c array.c -o array2
 
 ******************************************************************************/
 
