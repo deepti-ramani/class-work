@@ -1,0 +1,24 @@
+Question: What movie should I watch?
+
+Output:
+	Big Hero Six
+	Into the Spider-Verse
+	Joker
+	Enchanted
+	
+Input:
+	Animated (A)
+	Superhero (S)
+	Disney (D)
+	Horror (H)
+	
+
+Equation:
+
+Big Hero Six (D && A) && !H
+
+Spider-Verse: (A && S) && !H
+
+Joker: (H || S) && !A
+
+Enchanted: !S && !H
