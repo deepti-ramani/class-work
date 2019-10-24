@@ -2,7 +2,7 @@
 SieveOfEratothenes.c
 by Deepti Ramani
 10/23/2019
-Description
+This code contains definitions for functions sieve, twin_primes, and brun_constant.
 
 gcc -Wall -Wextra -Werror -ansi -pedantic -O main.c SieveOfEratothenes.c -o sieveOfEratothenes.exe
 */

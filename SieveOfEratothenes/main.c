@@ -2,7 +2,7 @@
 main.c
 by Deepti Ramani
 10/23/2019
-Description
+This code is used to test functions in SieveOfEratothenes.c
 */
 
 /* printf */

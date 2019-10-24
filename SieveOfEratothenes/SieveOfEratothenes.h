@@ -2,7 +2,7 @@
 SieveOfEratothenes.h
 by Deepti Ramani
 10/23/2019
-Description
+This code contains the prototypes for the functions used in SieveOfEratothenes.c
 */
 
 #define FALSE 0
