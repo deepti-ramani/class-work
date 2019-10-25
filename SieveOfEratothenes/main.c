@@ -9,8 +9,8 @@ This code is used to test functions in SieveOfEratothenes.c
 #include <stdio.h>
 /* sieve, twin_primes, brun_constant, TRUE, FALSE */
 #include "SieveOfEratothenes.h" 
-/* size of array */
-#define SIZE 101
+/* size of array (518112 is the biggest it can get without breaking) */
+#define SIZE 518112
 
 int main(void)
 {
