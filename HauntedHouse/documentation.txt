@@ -1,0 +1,21 @@
+Theme:
+-Abandoned castle
+-Lots of cobwebs, wooden planks & stone
+-overgrown vines and plants
+-BATS!
+-Mazes & hidden rooms b/c of collapsing walls
+
+Main Ideas:
+-confuse the player rather than scare
+
+Zach (Director)
+-door puzzle (command blocks)
+-intro + reset (commands)
+
+Emmy
+-maze puzzle (code builder)
+-floor opening up in corridor (command blocks)
+
+Deepti (Producer)
+-passcode puzzle (redstone)
+-corridors closing behind player
