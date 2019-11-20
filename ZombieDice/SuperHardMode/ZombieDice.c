@@ -18,13 +18,13 @@ gcc -Wall -Wextra -Werror -ansi -pedantic -O ZombieDice.c -o zombiedice.exe
 #define GREEN 0
 
 /* return player score at the end of their turn*/
-int PlayerTurn(int selected_dice[], int dice_pool[], int *pool_size);
+int PlayerTurn(int selected_dice[], int dice_pool[], int* pool_size);
 
 /* check for win condition at the end of each player's turn */
 int CheckWinner(int player_scores[]);
 
 /* pick next dice for the next roll of the player */
-void SelectDice(int selected_dice[], int dice_pool[], int *pool_size);
+void SelectDice(int selected_dice[], int dice_pool[], int* pool_size);
 
 /* main */
 int main(void)
@@ -83,7 +83,7 @@ int main(void)
 }
 
 /* return player score at the end of their turn*/
-int PlayerTurn(int selected_dice[], int dice_pool[], int *pool_size)
+int PlayerTurn(int selected_dice[], int dice_pool[], int* pool_size)
 {
 	char input;
 	int number_of_brains = 0;
@@ -237,7 +237,7 @@ int CheckWinner(int player_scores[])
 }
 
 /* pick next dice for the player */
-void SelectDice(int selected_dice[], int dice_pool[], int *pool_size)
+void SelectDice(int selected_dice[], int dice_pool[], int* pool_size)
 {
 	int i;
 	int random;
@@ -255,7 +255,7 @@ void SelectDice(int selected_dice[], int dice_pool[], int *pool_size)
 			/* change pool size since someone picked a dice */
 			dice_pool[random] = dice_pool[*pool_size - 1];
 			dice_pool[*pool_size - 1] = selected_dice[i];
-			*pool_size = *pool_size - 1;
+			*pool_size -= 1;
 			
 			/* add dice back into pool */
 			if(*pool_size <= 0)
