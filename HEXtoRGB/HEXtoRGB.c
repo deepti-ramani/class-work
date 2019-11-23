@@ -1,7 +1,7 @@
 /* 
-	hex string will always have the following format: 
+	The hex string will always have the following format: 
 	#091FaA 
-	where each digit can be from 0 to f in hex.
+	Each digit can be from 0 to f in hex.
 	You don't know if its caps or not 
 	
 	gcc -Wall -Wextra -ansi -pedantic -O HEXtoRGB.c -o HEXtoRGB.exe
@@ -39,7 +39,7 @@ void HEXtoRGB(const char* hexString, int* R, int* G, int* B)
 		{
 			temp -= 87;
 		}
-		/* else invalid input */
+		/* otherwise, the hex string is invalid */
 		else
 		{
 			printf("Invalid hex string.\n");
