@@ -1,0 +1,8 @@
+Given a voltage of 5.00000 Volts, and a current of 2.00000 Amps, the total resistance would be 2.50000 Ohms
+Given a voltage of 12.00000 Volts, and a total resistance of 100.00000 Ohms, the current would be 0.12000 Amps
+Given a current of 0.50000 Amps, and a total resistance of 14.00000 Ohms, the voltage would be 7.00000 Volts
+Total resistance is 150.000000 when R1, 300.000000, and R2, 300.000000, are hooked in parallel.
+Total resistance is 6.666667 with resistor values 10, 20.
+Total resistance is 3.414172 with resistor values 10, 20, 30, 40, 50, 60, 70, 80, 90, and 100.
+With parallel resistor(s) 50.0, 100.0, and sequential resistor(s) 50.0, the total resistance is 58.333333.
+Given a voltage of 5.000000 and total resistance of 58.333333, the current is 0.085714.
