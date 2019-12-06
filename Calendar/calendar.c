@@ -83,16 +83,7 @@ void print_calendar(int month, int year)
 	/* print remaining rows */
 	for(; col < 7; col++)
 	{
-		/* one-digit numbers */
-		if(day < 10)
-		{
-			printf(" %i ", day);
-		}
-		/* two-digit numbers */
-		else
-		{
-			printf("%i ", day);
-		}
+		printf("%2i ", day);
 		
 		/* new line every 7th day */
 		if(col == 6)
