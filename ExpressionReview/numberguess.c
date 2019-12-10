@@ -13,26 +13,36 @@ gcc -Wall -Wextra -Werror -ansi -pedantic -O numberguess.c -o numberguess.exe
 /* rand, srand */
 #include <stdlib.h> 
 
+/* time */
+#include <time.h>
+
 int main(void)
 {
-	int random = rand() % 10 + 1;
+	int randomNumber = 0;
 	int guess = 0;
-	int count = 1;
+	int countGuesses = 1;
+	
+	srand(time(0));
+	randomNumber = rand() % 10 + 1;
+	
 	printf("Guess a number between 1 and 10: ");
 	scanf(" %i", &guess);
-	while(guess != random)
+	
+	while(guess != randomNumber)
 	{
-		if(guess > random)
+		if(guess > randomNumber)
 		{
 			printf("Too high. Guess again: ");
 		}
-		else if(guess < random)
+		else if(guess < randomNumber)
 		{
 			printf("Too low. Guess again: ");
 		}
 		scanf(" %i", &guess);
-		count++;
+		countGuesses++;
 	}
-	printf("You got it in %i guesses!\n", count);
+	
+	printf("You got it in %i guesses!\n", countGuesses);
+	
 	return 0;
 }
