@@ -10,12 +10,12 @@ gcc -Wall -Wextra -Werror -ansi -pedantic -O mile_km_converter.c -o mile_km_conv
 /* printf, scanf */
 #include <stdio.h>
 
-double convertToKm(double miles)
+float convertToKm(float miles)
 {
 	return miles * 1.60934;
 }
 
-double convertToMiles(double km)
+float convertToMiles(float km)
 {
 	return km / 1.60934;
 }
