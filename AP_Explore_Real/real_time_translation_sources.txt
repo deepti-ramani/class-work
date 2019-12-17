@@ -1,0 +1,21 @@
+https://www.nytimes.com/2019/11/07/travel/the-latest-in-translation-devices.html
+Karen Schwartz; Nov 7 2019; New York Times
+
+https://www.usatoday.com/story/tech/2019/12/12/google-translates-language-real-time/4399116002/ (2019)
+Jefferson Graham; Dec 12 2019; USA Today
+
+https://techcrunch.com/2019/12/12/interpreter-googles-real-time-translator-comes-to-mobile/
+Brian Heater; Dec 12 2019; Techcrunch.com
+
+https://www.orange-business.com/en/blogs/language-translation-boosted-by-ai
+Glenn Le Santo; April 5 2018; Orange Business Services
+
+https://archive.triblive.com/business/technology/real-time-translation-tech-moves-us-closer-to-language-transparent-society/
+Aaron Aupperlee; May 23 2018; Trib Live
+
+https://www.ccjk.com/human-machine-translation-pros-cons/
+CCJK; Oct 10, 2013; CCJK
+
+My choice of topic is real-time language translation. Recently, Google has made Interpreter mode, a two-way language interpreter extension of Google Assistant, available on Android and iOS phones. With a simple command, this feature allows users to speak a phrase that is then translated in audio and text in real time. This allows two people to have a conversation in two different languages with less falters and awkward pauses. In addition to simply translating, Interpreter will also offer "smart replies" and allow someone to respond without even speaking.
+Other companies are also offering similar services. Some smartphones have cameras that can translate street signs and restaurant menus, and Skype's video chat software translates fast enough to allow almost seamless conversation between two people speaking two different languages. There's even technology at Carnegie Mellon University that can translate lectures and speeches in real time.
+These innovations allow for a more connected world, and will only continue to grow.

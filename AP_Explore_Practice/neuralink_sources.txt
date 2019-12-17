@@ -1,0 +1,11 @@
+https://www.forbes.com/sites/jonmarkman/2019/08/30/elon-musks-neuralink-is-sci-fi-made-real/#3fed797c4e2f
+Jon Markman; Aug 30 2019; Forbes
+
+https://www.businessinsider.com/we-spoke-to-2-neuroscientists-about-how-exciting-elon-musks-neuralink-really-is-2019-9
+Isobel Asher Hamilton; Oct 6 2019; Business Insider
+
+https://www.theverge.com/2019/7/16/20697123/elon-musk-neuralink-brain-reading-thread-robot
+Elizabeth Lopatto; Jul 16 2019; The Verge
+
+My choice of topic is Neuralink, designed by Elon Musk with the idea of "merging computers with human brains" in mind. Neuralink involves a tiny microchip that could be implanted behind a person's ear with tiny threads with electrodes fanning out into the brain. The chip then translates brain activity picked up by the electrodes to electrical signals that can then be used to control a computer. This technology could be used to improve the realism of robotic limbs, allowing patients to have better control over them and even enable more sensitive haptic feedback.
+Neuralink is a relatively new technology; however, scientists have already created technology that can interpret brain activity. The difference is that Elon Musk is hoping to use the technology, along with flexible, ultra-thin wires and a precise sewing machine to thread them into the brain, to acheive, in his words, "symbiosis between humans and AI."
