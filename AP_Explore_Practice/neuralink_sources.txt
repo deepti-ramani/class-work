@@ -1,11 +1,24 @@
-https://www.forbes.com/sites/jonmarkman/2019/08/30/elon-musks-neuralink-is-sci-fi-made-real/#3fed797c4e2f
-Jon Markman; Aug 30 2019; Forbes
-
-https://www.businessinsider.com/we-spoke-to-2-neuroscientists-about-how-exciting-elon-musks-neuralink-really-is-2019-9
-Isobel Asher Hamilton; Oct 6 2019; Business Insider
-
-https://www.theverge.com/2019/7/16/20697123/elon-musk-neuralink-brain-reading-thread-robot
-Elizabeth Lopatto; Jul 16 2019; The Verge
+Overview:
 
 My choice of topic is Neuralink, designed by Elon Musk with the idea of "merging computers with human brains" in mind. Neuralink involves a tiny microchip that could be implanted behind a person's ear with tiny threads with electrodes fanning out into the brain. The chip then translates brain activity picked up by the electrodes to electrical signals that can then be used to control a computer. This technology could be used to improve the realism of robotic limbs, allowing patients to have better control over them and even enable more sensitive haptic feedback.
 Neuralink is a relatively new technology; however, scientists have already created technology that can interpret brain activity. The difference is that Elon Musk is hoping to use the technology, along with flexible, ultra-thin wires and a precise sewing machine to thread them into the brain, to acheive, in his words, "symbiosis between humans and AI."
+
+MLA Citations:
+
+[1]
+Bocetta, Sam. "What are the Security Implications of Elon Musk's Neuralink?" CSO, 1 Aug. 2019, https://www.csoonline.com/article/3429361/what-are-the-security-implications-of-elon-musks-neuralink.html.
+
+[2]
+Hamilton, Isobel Asher. "We Spoke to 2 Neuroscientists About How Exciting Elon Musk's Neuralink Really Is." Business Insider, 6 Oct. 2019, https://www.businessinsider.com/we-spoke-to-2-neuroscientists-about-how-exciting-elon-musks-neuralink-really-is-2019-9
+
+[3]
+Lopatto, Elizabeth. "Elon Musk Unveils Neuralink’s Plans For Brain-reading ‘Threads’ and a Robot to Insert Them." TheVerge, 16 Jul. 2019, https://www.theverge.com/2019/7/16/20697123/elon-musk-neuralink-brain-reading-thread-robot
+
+[4]
+Markman, Jon. "Elon Musk's Neuralink is Sci-FI Made Real." Forbes, 30 Aug. 2019, https://www.forbes.com/sites/jonmarkman/2019/08/30/elon-musks-neuralink-is-sci-fi-made-real/#3fed797c4e2f
+
+[5]
+Neuralink. “Neurolink Launch Event.” YouTube, commentary by Elon Musk, Max Hodak, Matthew MacDougall, Vanessa Tolosa, DJ Seo, and Philip Sabes, 16 Jul. 2019, https://www.youtube.com/watch?v=r-vbh3t7WVI&feature=youtu.be.
+
+[6]
+Scammell, Robert. "Neuralink Security "Has to be Solid" to Avoid Brain Hacking." Verdict, 24 Jul. 2019, https://www.verdict.co.uk/neuralink-security-brain-hacking
