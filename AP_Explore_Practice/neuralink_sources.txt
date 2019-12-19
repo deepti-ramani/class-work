@@ -22,3 +22,6 @@ Neuralink. “Neurolink Launch Event.” YouTube, commentary by Elon Musk, Max H
 
 [6]
 Scammell, Robert. "Neuralink Security "Has to be Solid" to Avoid Brain Hacking." Verdict, 24 Jul. 2019, https://www.verdict.co.uk/neuralink-security-brain-hacking
+
+[7]
+Stewart, Ryan. "Latest Bluetooth Hacking Techniques Expose New Attack Vectors For Hackers." Cyware, 6 Jan. 2019, https://cyware.com/news/latest-bluetooth-hacking-techniques-expose-new-attack-vectors-for-hackers-a16cfb5e
