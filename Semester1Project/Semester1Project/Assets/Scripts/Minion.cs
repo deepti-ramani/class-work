@@ -8,7 +8,7 @@ public class Minion : MonoBehaviour
     public int points = 1;
     public int health = 5;
 
-    public float speed = 3.0f;
+    public float speed = 5.0f;
 
     public GameObject BossEnemy;
     public GameObject Player;
@@ -23,7 +23,11 @@ public class Minion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FollowPlayer();
+        float distToPlayer = Mathf.Abs(Vector2.Distance(transform.position, Player.transform.position));
+        if (distToPlayer <= 2.5f)
+        {
+            FollowPlayer();
+        }
 
         if (health <= 0)
         {

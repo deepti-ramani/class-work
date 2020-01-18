@@ -14,13 +14,15 @@ public class Player : MonoBehaviour
     //invulnerable while attacking (in intervals)
     public bool isAttacking = false;
     public bool isCooldown = false;
-    public float maxAttackCooldown = 2.5f;
-    public float maxAttackDuration = 1.5f;
+    public float timeUntilCooldownEnds = 2.5f;
+    public float timeUntilAttackEnds = 1.0f;
     private float currAttackTime;
 
     public Color idleColor = Color.white;
     public Color attackColor = new Color(255, 200, 150);
     public Color cooldownColor = new Color(255, 225, 200);
+
+    public bool isInLava = false;
 
     //update ui
     public TextMesh HealthText;
@@ -29,7 +31,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currAttackTime = maxAttackCooldown;
+        currAttackTime = timeUntilCooldownEnds;
         HealthText = GameObject.Find("HealthText").GetComponent<TextMesh>();
         ScoreText = GameObject.Find("ScoreText").GetComponent<TextMesh>();
     }
@@ -44,7 +46,7 @@ public class Player : MonoBehaviour
         if (isCooldown)
         {
             //check if attack has finished
-            if (currAttackTime <= maxAttackDuration && isAttacking)
+            if (currAttackTime <= timeUntilAttackEnds && isAttacking)
             {
                 gameObject.GetComponent<SpriteRenderer>().color = cooldownColor;
                 speed /= 2.25f;
@@ -54,7 +56,7 @@ public class Player : MonoBehaviour
             else if (currAttackTime <= 0.0f)
             {
                 gameObject.GetComponent<SpriteRenderer>().color = idleColor;
-                currAttackTime = maxAttackCooldown;
+                currAttackTime = timeUntilCooldownEnds;
                 isCooldown = false;
             }
 
@@ -124,22 +126,41 @@ public class Player : MonoBehaviour
     //deal damage to enemy
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //basic enemies
         if(isAttacking && collision.transform.gameObject.tag == "Enemy")
         {
             collision.transform.gameObject.GetComponent<EnemyController>().Damage(damage);
         }
-        else if(isAttacking && collision.transform.gameObject.tag == "Boss")
+
+        //boss
+        if(isAttacking && collision.transform.gameObject.tag == "Boss")
         {
             if(!collision.transform.gameObject.GetComponent<BossEnemy>().isInvincible)
             {
                 collision.transform.gameObject.GetComponent<BossEnemy>().Damage(damage);
             }
         }
-        else if(isAttacking && collision.transform.gameObject.tag == "Minion")
+
+        //boss minion
+        if(isAttacking && collision.transform.gameObject.tag == "Minion")
         {
             collision.transform.gameObject.GetComponent<Minion>().Damage(damage);
         }
-        else if(collision.transform.gameObject.name == "Goal")
+
+        //TODO: travel slower in lava
+        //lava
+        if(collision.transform.gameObject.tag == "Lava")
+        {
+            UpdateHealth(1);
+            isInLava = true;
+        }
+        else
+        {
+            isInLava = false;
+        }
+
+        //end goal
+        if(collision.transform.gameObject.name == "Goal")
         {
             //victory "screen"
             SceneManager.LoadScene("WinScreen");

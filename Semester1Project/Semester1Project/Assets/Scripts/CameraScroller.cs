@@ -6,7 +6,6 @@ public class CameraScroller : MonoBehaviour
 {
     private Vector3 newPos;
     public float speed = 7.0f;
-    public float maxX;
 
     public GameObject Player;
 
@@ -21,7 +20,7 @@ public class CameraScroller : MonoBehaviour
     void Update()
     {
 
-        if(Player.transform.position.x > 0 && transform.position.x < maxX)
+        if(Player.transform.position.x > 0)
         {
             newPos = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
             newPos.y = transform.position.y;

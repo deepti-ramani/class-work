@@ -124,6 +124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   damage: 1
+  timeUntilDewpawn: 2
+  timeRemaining: 0
   Player: {fileID: 0}
 --- !u!50 &-6022828412213292052
 Rigidbody2D:

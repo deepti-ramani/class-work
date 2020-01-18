@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bfa00d1a7f27e954585b295a83896400, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 56bce8a5ae6b99243873a2df313f91d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
   health: 10
   isAttacking: 0
   isCooldown: 0
-  maxAttackCooldown: 2.5
-  maxAttackDuration: 1.5
+  maxAttackCooldown: 2
+  maxAttackDuration: 1.75
   idleColor: {r: 1, g: 1, b: 1, a: 1}
   attackColor: {r: 1, g: 0.81122017, b: 0.5424528, a: 1}
   cooldownColor: {r: 1, g: 0.8896952, b: 0.7311321, a: 1}

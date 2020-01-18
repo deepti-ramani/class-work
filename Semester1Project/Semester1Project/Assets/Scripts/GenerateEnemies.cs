@@ -15,6 +15,7 @@ public class GenerateEnemies : MonoBehaviour
 
     private float timeUntilEnemyGenerates;
     private float timeRemaining;
+    public bool stopGenerating = false;
 
     private float enemyToSpawn;
 
@@ -22,7 +23,7 @@ public class GenerateEnemies : MonoBehaviour
     void Start()
     {
         //first enemy is hardcoded
-        Instantiate(BasicEnemy, new Vector3(5, -4, 0), transform.rotation);
+        Instantiate(BasicEnemy, new Vector3(5, -4.5f, 0), transform.rotation);
 
         //timing of enemies is random
         timeUntilEnemyGenerates = Random.Range(4.0f, 7.0f);
@@ -38,8 +39,13 @@ public class GenerateEnemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {      
+        if(transform.position.x >= 43)
+        {
+            stopGenerating = true;
+        }
+
         //if the countdown is reached
-        if (timeRemaining <= 0.0f && transform.position.x <= 50)
+        if (timeRemaining <= 0.0f && !stopGenerating)
         {
             //generate an enemy a random distance away from the player
             spawnX = Player.transform.position.x + Random.Range(5.0f, 8.0f);
