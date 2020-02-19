@@ -8,6 +8,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,10 +27,26 @@ public class GameManager : MonoBehaviour
     }
     public static GameState gameState;
 
-    //link to special game objects
-    private GameObject PacMan;
-    private static TextMesh ScoreText;
+    //player
+    public GameObject PacMan;
+
+    //ghosts
     public float SpeedPerLevel = 0.025f;
+    public float BaseSpeed = 0.1f;
+    public float scareLength;
+    private float _timeToCalm;
+    public GameObject Blinky;
+    public GameObject Pinky;
+    public GameObject Inky;
+    public GameObject Clyde;
+
+    //UI
+    private static TextMesh ScoreText;
+
+    //max = 231
+    public int dotsEaten = 0;
+
+
     
     //singleton implementation
     private static GameManager _instance;
@@ -66,6 +83,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AssignGhosts();
+
         ScoreText = GameObject.Find("ScoreText").GetComponent<TextMesh>();
         //TODO set this to init once you have a start screen made
         gameState = GameState.Game;
@@ -74,7 +93,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(dotsEaten >= 245)
+        {
+            //quit game when we win
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
     }
 
     public static void UpdateScore(int amount)
@@ -84,5 +107,26 @@ public class GameManager : MonoBehaviour
 
         //update score text
         ScoreText.text = Score.ToString();
+    }
+
+    //assign and initialize ghosts/pacman
+    void AssignGhosts()
+    {
+        PacMan = GameObject.Find("Player");
+
+        Blinky = GameObject.Find("Blinky");
+        Pinky = GameObject.Find("Pinky");
+        Inky = GameObject.Find("Inky");
+        Clyde = GameObject.Find("Clyde");
+
+        if(Blinky == null || Pinky == null || Inky == null || Clyde == null)
+        {
+            Debug.Log("One of the ghosts is null.");
+        }
+
+        if(PacMan == null)
+        {
+            Debug.Log("Pacman is null.");
+        }
     }
 }

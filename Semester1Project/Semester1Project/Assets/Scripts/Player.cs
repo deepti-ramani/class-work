@@ -22,8 +22,6 @@ public class Player : MonoBehaviour
     public Color attackColor = new Color(255, 200, 150);
     public Color cooldownColor = new Color(255, 225, 200);
 
-    public bool isInLava = false;
-
     //update ui
     public TextMesh HealthText;
     public TextMesh ScoreText;
@@ -145,18 +143,6 @@ public class Player : MonoBehaviour
         if(isAttacking && collision.transform.gameObject.tag == "Minion")
         {
             collision.transform.gameObject.GetComponent<Minion>().Damage(damage);
-        }
-
-        //TODO: travel slower in lava
-        //lava
-        if(collision.transform.gameObject.tag == "Lava")
-        {
-            UpdateHealth(1);
-            isInLava = true;
-        }
-        else
-        {
-            isInLava = false;
         }
 
         //end goal

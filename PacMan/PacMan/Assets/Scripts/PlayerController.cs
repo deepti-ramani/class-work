@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     Vector2 NextDirection = Vector2.zero;
 
     //next tile to move to
-    Vector3 Destination = Vector3.zero;
+    public Vector3 Destination = Vector3.zero;
 
     //base speed
     public float Speed = 0.2f;
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //check if pac-man is in the center of a tile then check if you change movement
-        if(Vector2.Distance(Destination, transform.position) < 0.00001f)
+        if(Vector2.Distance(Destination, transform.position) < 0.0001f)
         {
             //check if we can go where the player wants to
             if(isValidDirection(NextDirection))
@@ -76,12 +76,14 @@ public class PlayerController : MonoBehaviour
                 CurrDirection = NextDirection;
                 ChangeMovingState();
             }
+            //check if pac-man can continue on its current path
             else if(isValidDirection(CurrDirection))
             {
                 transform.position = Destination;
                 Destination = (Vector2)transform.position + CurrDirection;
                 ChangeMovingState();
             }
+            //stop moving
             else
             {
                 ChangeIdleState();
@@ -90,18 +92,6 @@ public class PlayerController : MonoBehaviour
 
         //move closer to destination if possible
         Vector2 p = Vector2.MoveTowards(transform.position, Destination, Speed);
-
-        //loop across screen if necessary
-        if (transform.position.x < -14)
-        {
-            p = new Vector2(14, transform.position.y);
-            Destination = p + CurrDirection;
-        }
-        else if (transform.position.x > 14)
-        {
-            p = new Vector2(-14, transform.position.y);
-            Destination = p + CurrDirection;
-        }
 
         //change pos
         myRb.MovePosition(p);
@@ -120,6 +110,7 @@ public class PlayerController : MonoBehaviour
         return hit.collider == null;
     }
 
+    //change idle animations
     void ChangeIdleState()
     {
         if(CurrDirection.x > 0)
@@ -145,6 +136,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //change moving animations
     void ChangeMovingState()
     {
         if (CurrDirection.x > 0)
