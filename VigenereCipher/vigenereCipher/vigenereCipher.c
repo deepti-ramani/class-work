@@ -104,8 +104,7 @@ void vigenere(char *string, char *key, enum CODE_METHOD method, int passes)
 				}
 			}
 		}
-	}
-	
+	}	
 	return;
 }
 
